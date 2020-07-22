@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <div id="app">
+        <button onclick="mostraAlerta()">Me pressione</button>
+    </div>
+    <div>
+        <button onmouseover="mostraAlerta()">Mouse aqui</button>
+    </div>
+    <div>
+        <input onkeydown="mostraAlerta()">
+    </div>
+    <div>
+        <input onkeyup="mostraAlerta()">
+    </div>
+    <div>
+        <input onkeypress="mostraAlerta()">
+    </div>
+    <script>
+        function mostraAlerta(){
+            alert('Botão foi clicado');
+        }
+    </script>
+</body>
+</html>
