@@ -7,15 +7,22 @@
 </head>
 <body>
     <div id="app">
-        <input id="nome" type="text" name="nome" class="nome">
-        <input id="nome" type="text" name="nome2" class="nome">
+        <input type="text" name="nome" >
         <button class="botao">Adicionar</button>
     </div>
     <script>
         // var inputElement = document.getElementById('nome');
         // var inputElement = document.getElementsByTagName('input')[1];
-        var inputElement = document.getElementsByClassName('nome');
-        console.log(inputElement);
+        // var inputElement = document.getElementsByClassName('nome')[1];
+        // var inputElement = document.querySelector('div#app input');
+        // var inputElement = document.querySelector('input[name=nome]');
+        // var inputElement = document.querySelectorAll('input');
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+        btnElement.onclick = function(){
+            var text = inputElement.value;
+            alert(text);
+        }
     </script>
 </body>
 </html>
